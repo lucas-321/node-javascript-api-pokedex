@@ -1,0 +1,272 @@
+/* parte 2 */
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #fff;
+  border-bottom: .125rem solid #fff;
+  outline: none;
+}
+
+.info{
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.info2{
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.top{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.detail-top-data{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 1rem;
+    text-transform: capitalize;
+}
+
+.info3{
+    max-width: 992px;
+    min-height: 70vh;
+    height: auto;
+    padding: 2rem;
+    margin: 1rem auto auto auto;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f1f1f1;
+}
+
+.detail-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.detail-img img{
+    max-width: 100%;
+    margin-bottom: -2.8rem;
+}
+
+.info2 .detail2{
+    display: flex;
+    flex-direction: column;
+}
+
+.info2 .detail2 .types{
+    color: #fff;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.types2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.types3{
+    margin: 0 .25rem;
+    padding: .25rem .5rem ;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    color: #fff;
+}
+
+/* menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 2rem;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu a {
+    display: block;
+    padding: .5rem;
+    color: #999;
+    text-decoration: none;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    color: #333;
+    border-bottom: .125rem solid #333;
+  }
+
+/* parte de baixo */
+.info,
+.breeding {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.info th,
+.breeding th {
+  color: #999;
+  font-weight: normal;
+  text-align: left;
+  padding: 10px;
+  width: 8rem;
+}
+
+.info td,
+.breeding td {
+  color: #333;
+  text-align: left;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.info th:first-child,
+.breeding th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.info th:last-child,
+.breeding th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.info td:first-child,
+.breeding td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.info td:last-child,
+.breeding td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.info th,
+.breeding th,
+.info td,
+.breeding td {
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.info tr:hover td,
+.breeding tr:hover td {
+  background-color: #f2f2f2;
+}
+
+.info tr:first-child th,
+.breeding tr:first-child th {
+  border-top: none;
+}
+
+.info tr:last-child td,
+.breeding tr:last-child td {
+  border-bottom: none;
+}
+
+/* base stats */
+.stats {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .stats th,
+  .stats td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .stats th {
+    color: #999;
+    width: 10%;
+  }
+
+  .stats td {
+    width: 20%;
+  }
+
+  .stats .bar{
+    width: 60%;
+  }
+
+/* barra */
+.progress{
+    height: 0.25rem;
+    background-color: lightgray;
+    position: relative;
+    transition: width 1s ease;
+    margin-left: 0.25rem; 
+    vertical-align: middle;
+}
+
+.progress .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: green;
+   animation: progress-animation 0.5s;
+   animation-fill-mode: forwards;
+}
+
+.progress-bar.red {
+    background-color: red;
+}
+
+@keyframes progress-animation{
+    0% { width: 0%; }
+    
+    100% { width: calc(var(--percent) * 0.8)}
+    
+}
+
+.gender .male, .female{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.male{
+    color: blue;
+}
+
+.female{
+    color: rgb(226, 43, 128);
+}
+
+
+/* fim de base stats */
+
+/* fim da parte 2 */
+
